@@ -1,8 +1,9 @@
 /*
  * AUTORE: Michele Pezzo
  * DESCRIZIONE:
- *     - dato in input un carattere maiuscolo, ritorna lo stesso
- *       carattere in minuscolo;
+ *     - scrivere un programma che, dati 3 input da tastiera (ore,
+ *       minuti, secondi), li memorizzi in 3 variabili distinte e
+ *       calcoli i secondi alla mezzanotte.
  * 
  */
 
@@ -11,20 +12,24 @@
 using namespace std;
 
 int main(){
-    char carattereMaiuscolo;
-    char carattereMinuscolo;
+    //variabili, costanti
+    const int secondiMezzanotte = 86400; 
+    char orario[8];
+    int orarioSecondi;
+    int ore, minuti, secondi;
 
-    cout << "Inserisci un carattere: ";
-    cin >> carattereMaiuscolo;
+    //input
+    cout << "Inserisci orario (formato \"xx:xx:xx\"): ";
+    cin >> orario;
 
-    if(carattereMaiuscolo >= 'A' && carattereMaiuscolo<= 'Z'){
-
-        carattereMinuscolo = carattereMaiuscolo + 32;        
-        cout << "Il carattere in minuscolo è \'" << carattereMinuscolo << "\'" << endl;
-    }
-    else{
-        cout << "Il carattere inserito non fa parte dell\'alfabeto oppure non è una lettera" << endl;
-    }
+    //parsing
+    sscanf(orario, "%d:%d:%d", &ore, &minuti, &secondi);
+    
+    //calcolare l'orario in secondi
+    orarioSecondi = (ore*60*60) + (minuti*60) + secondi;
+    
+    //output
+    cout << "Alla mezzanotte mancano " << secondiMezzanotte-orarioSecondi << " secondi." << endl;
 
     return 0;
 }
