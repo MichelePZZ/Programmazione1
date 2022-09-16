@@ -1,9 +1,9 @@
 /*
  * AUTORE: Michele Pezzo
  * DESCRIZIONE:
- *     - scrivere un programma che, dati in input i secondi a
- *       mezzanotte, li salvi in una variabile e ritorni a video
- *       l'equivalente orario in ore, minuti e secondi.
+ *     - scrivere un programma che, dati 3 input da tastiera (ore,
+ *       minuti, secondi), li memorizzi in 3 variabili distinte e
+ *       calcoli i secondi alla mezzanotte.
  * 
  */
 
@@ -12,23 +12,24 @@
 using namespace std;
 
 int main(){
-    //variabili, costanti necessarie
-    int secondiMezzanotte;
+    //variabili, costanti
+    const int secondiMezzanotte = 86400; 
+    char orario[8];
+    int orarioSecondi;
     int ore, minuti, secondi;
 
     //input
-    cout << "Inserire i secondi per arrivare a mezzanotte: ";
-    cin >> secondiMezzanotte;
+    cout << "Inserisci orario (formato \"xx:xx:xx\"): ";
+    cin >> orario;
 
-    //calcoli
-    ore = (secondiMezzanotte / 60) / 60;
-    secondiMezzanotte %= (60*60);
+    //parsing
+    sscanf(orario, "%d:%d:%d", &ore, &minuti, &secondi);
     
-    minuti = secondiMezzanotte / 60;
-    secondi = secondiMezzanotte % 60;
-
+    //calcolare l'orario in secondi
+    orarioSecondi = (ore*60*60) + (minuti*60) + secondi;
+    
     //output
-    cout << "L'orario è " << ore << ":" << minuti << ":" << secondi;
+    cout << "Alla mezzanotte mancano " << secondiMezzanotte-orarioSecondi << " secondi." << endl;
 
     return 0;
 }
