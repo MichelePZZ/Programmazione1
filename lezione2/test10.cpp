@@ -21,9 +21,8 @@ int main(){
     cin >> secondiMezzanotte;
 
     //calcoli
-    ore = (secondiMezzanotte / 60) / 60;
+    ore = secondiMezzanotte / 3600;
     secondiMezzanotte %= (60*60);
-    
     minuti = secondiMezzanotte / 60;
     secondi = secondiMezzanotte % 60;
 
