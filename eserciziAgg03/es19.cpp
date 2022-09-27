@@ -10,10 +10,14 @@
 #include <iostream>
 using namespace std;
 
+int rovescia(int n);
+
 // errore perchè prende il numero al contrario (8)
 int main(){
     int n;
     cin >> n;
+
+    n = rovescia(n);
 
     cout << "Il numero in lettere è ";
 
@@ -32,9 +36,22 @@ int main(){
             default: cout << "Errore" << endl;
         }
 
+        cout << ", ";
 
         n /= 10;
     }
 
     return 0;
+}
+
+int rovescia(int n){
+    int numero_invertito = 0;
+
+    while(n > 0){
+        numero_invertito *= 10;
+        numero_invertito += n % 10;
+        n /=10;
+    }
+
+    return numero_invertito;
 }
