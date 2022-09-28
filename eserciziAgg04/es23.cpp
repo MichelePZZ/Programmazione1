@@ -13,11 +13,9 @@ using namespace std;
 void coutPascal(int colonna, int riga);
 void numeroPascal(int colonna, int riga);
 
-int risultato;
+int risultato, dim;
 
 int main(){
-    int dim;
-
     cout << "Inserire il numero di riga: ";
     cin >> dim;
 
@@ -25,7 +23,8 @@ int main(){
 }
 
 void coutPascal(int colonna, int riga){
-    if(colonna == riga){
+    if(riga > dim){
+    } else if(colonna == riga){
         // stampare a video 1
         cout << "1" << endl;
 
@@ -35,6 +34,9 @@ void coutPascal(int colonna, int riga){
     } else if(colonna == 1){
         // stampare a video 1
         cout << "1\t";
+
+        colonna ++;
+        coutPascal(colonna, riga);
     } else {
 
         // stampare a video il numero (colonna, riga)
@@ -46,6 +48,8 @@ void coutPascal(int colonna, int riga){
         colonna++;
         coutPascal(colonna, riga);
     }
+
+    
 }
 
 void numeroPascal(int colonna, int riga){
