@@ -11,9 +11,9 @@
 using namespace std;
 
 int main(){
-    int n = 2;
-    int w = 1;
+    int n = 1;
 
-    cout << ((&n > &w) ? "Big Endian" : "Little Endian") << endl;
+    cout << ((*(char *)&n == 1) ? "Little Endian" : "Big Endian"); 
+
     return 0;
 }

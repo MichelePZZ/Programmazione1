@@ -1,5 +1,5 @@
 # Vettori e strutture
-## Strutture
+## 6.6 Strutture
 Una struttura è una collezione di elementi (campi), ognino dei quali puè contenere un tipo diverso.
 
     es. struct <nome>{
