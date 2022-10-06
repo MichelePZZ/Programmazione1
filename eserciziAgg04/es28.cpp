@@ -12,7 +12,18 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void riempimento(int n);
 
-    return 0;
+int main(){
+    int n = 0;
+    riempimento(n);
+}
+
+void riempimento(int n){
+    cout.flush();
+    cout << n << endl;
+
+    long long arrayInutile[1000];
+
+    riempimento(++n);
 }
