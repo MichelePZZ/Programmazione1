@@ -51,13 +51,15 @@ int* inputArray(){
 bool confronto(int a1[], int a2[]){
     bool controllo = true;
 
-    for(int i=0; i<a1[0] && controllo == true; i++){
+    for(int j=0; j<a2[0] && controllo == true; j++){
         controllo = false;
 
-        for(int j=0; j<a2[0]; j++){
+        for(int i=0; i<a1[0]; i++){
             if(a1[i] == a2[j]){
                 controllo = true;
             }
         }
     }
+
+    return controllo;
 }
