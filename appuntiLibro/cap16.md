@@ -141,3 +141,4 @@ Nello ShellSort si scambiano coppie di elementi che stanno a distanza. Si parte 
         }
     }
 
+## Quicksort

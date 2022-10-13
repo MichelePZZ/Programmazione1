@@ -49,14 +49,18 @@ void quickSort(int* array, int high){
     
 }
 
-int partition(int* array, int left, int pivot){
-    int low = left - 1;
-    int high = pivot -1;
-
-    for(int j = left; j <= high; j++){
-        if(array[j] <= array[pivot]){
-            low++;
-            scambio()
+int partition(int* array, int l, int r){
+    int i = l-1, j = r, v = array[r];
+    while (true){
+        while(array[++i] < v){
+            while(v < array[--j]){
+                if ( j == l) break;
+            }
+            if(i >= j) break;
         }
+        scambio(array[i], array[j]);
+        return i;
     }
+    
+
 }
