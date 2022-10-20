@@ -9,15 +9,13 @@
 #include <iostream>
 using namespace std;
 
-int* inputArray(int n);
+int* inputArray(int &n);
 void scambio (int &a, int &b);
+void quickSort(int* array, int low, int high);
 
 int main(){
     int n;
     int* array;
-
-    cout << "Inserisci il numero di elementi dell'array principale: ";
-    cin >> n;
 
     array = inputArray(n);
 
@@ -28,8 +26,11 @@ int main(){
     return 0;
 }
 
-int* inputArray(int n){
+int* inputArray(int &n){
     int* array = new int[n];
+
+    cout << "Inserisci il numero di elementi dell'array principale: ";
+    cin >> n;
 
     cout << "Inserire gli elementi dell'array: " << endl;
     for(int i=0; i<(n); i++){
@@ -45,22 +46,32 @@ void scambio (int &a, int &b){
     b = aux;
 }
 
-void quickSort(int* array, int high){
-    
-}
+void quickSort(int* array, int low, int high){
+    int pivot = array[low];
 
-int partition(int* array, int l, int r){
-    int i = l-1, j = r, v = array[r];
-    while (true){
-        while(array[++i] < v){
-            while(v < array[--j]){
-                if ( j == l) break;
+    int i = low+1, j = high-1;
+
+
+    while(i < j){
+
+        while(array[i] < pivot){
+            i++;
+
+            if(i > j){
+                quickSort(array, low, j);
+                quickSort(array, i, high);
             }
-            if(i >= j) break;
         }
-        scambio(array[i], array[j]);
-        return i;
-    }
-    
 
+        while(array[j] > pivot){
+            j--;
+
+            if(i > j){
+                quickSort(array, low, j);
+                quickSort(array, i, high);
+            }
+        }
+
+        scambio(array[i], array[j]);
+    }
 }
