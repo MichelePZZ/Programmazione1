@@ -105,3 +105,6 @@ Complessita' computazionale: O(n*log_2(n)) passi.
 # Array multidimensionali
 
     tipo id[dim1][dim2] = {lista_valori};
+
+Le dimensioni devono essere valutabili durante la compilazione.
+

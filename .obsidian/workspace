@@ -1,0 +1,139 @@
+{
+  "main": {
+    "id": "7ce2c1eaa89c525f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4581fc9485ee389",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "appuntiLezione/lez09-11-2022.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "46e88cd5eddabfae",
+    "type": "split",
+    "children": [
+      {
+        "id": "c361be50c2fc8148",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2a62eec18b476c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ec7d0b3d63a89517",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5bd51fecae81e569",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "1e5985451882bde5",
+    "type": "split",
+    "children": [
+      {
+        "id": "44ef6677595da456",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "554ed62b7683e9b1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "appuntiLezione/lez09-11-2022.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13b45038af6912fb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "appuntiLezione/lez09-11-2022.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "54c957af3a4b7251",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5532bd29ca6adee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "appuntiLezione/lez09-11-2022.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e4581fc9485ee389",
+  "lastOpenFiles": [
+    "appuntiLezione/lez04.md",
+    "appuntiLezione/lez12.md",
+    "appuntiLezione/lez06.md",
+    "appuntiLezione/lez09-11-2022.md"
+  ]
+}
