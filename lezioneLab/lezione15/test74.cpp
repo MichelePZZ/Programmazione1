@@ -40,8 +40,6 @@ int main(int argc, char* argv[]){
 
     cout << endl;
     input.close();
-
-
-
+    
     return 0;
 }

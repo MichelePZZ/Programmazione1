@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <fstream>
+#define SIZE 1000
 using namespace std;
 
 int main(int argc, char* argv[]){
@@ -29,9 +30,15 @@ int main(int argc, char* argv[]){
         exit(2);
     }
 
+    char** matrix_a = new char*[SIZE];
     char c;
+    int n;
     while(a.get(c)){
-        b << c;
+        if(c == ' '){
+            
+        } else { 
+            n++;
+        }
     }
 
     a.close();
