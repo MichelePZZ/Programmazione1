@@ -6,72 +6,74 @@
  */
 
 
+// C++ Implementation of the Quick Sort Algorithm.
 #include <iostream>
 using namespace std;
 
-int* inputArray(int &n);
-void scambio (int &a, int &b);
-void quickSort(int* array, int low, int high);
+int partition(int arr[], int start, int end)
+{
 
-int main(){
-    int n;
-    int* array;
+    int pivot = arr[start];
 
-    array = inputArray(n);
+    int count = 0;
+    for (int i = start + 1; i <= end; i++) {
+        if (arr[i] <= pivot)
+            count++;
+    }
 
+    // Giving pivot element its correct position
+    int pivotIndex = start + count;
+    swap(arr[pivotIndex], arr[start]);
 
+    // Sorting left and right parts of the pivot element
+    int i = start, j = end;
 
+    while (i < pivotIndex && j > pivotIndex) {
 
+        while (arr[i] <= pivot) {
+            i++;
+        }
+
+        while (arr[j] > pivot) {
+            j--;
+        }
+
+        if (i < pivotIndex && j > pivotIndex) {
+            swap(arr[i++], arr[j--]);
+        }
+    }
+
+    return pivotIndex;
+}
+
+void quickSort(int arr[], int start, int end)
+{
+
+    // base case
+    if (start >= end)
+        return;
+
+    // partitioning the array
+    int p = partition(arr, start, end);
+
+    // Sorting the left part
+    quickSort(arr, start, p - 1);
+
+    // Sorting the right part
+    quickSort(arr, p + 1, end);
+}
+
+int main()
+{
+
+    int arr[] = { 9, 3, 4, 2, 1, 8 };
+    int n = 6;
+
+    quickSort(arr, 0, n - 1);
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
 
     return 0;
-}
-
-int* inputArray(int &n){
-    int* array = new int[n];
-
-    cout << "Inserisci il numero di elementi dell'array principale: ";
-    cin >> n;
-
-    cout << "Inserire gli elementi dell'array: " << endl;
-    for(int i=0; i<(n); i++){
-        cin >> array[i];
-    }
-
-    return array;
-}
-
-void scambio (int &a, int &b){
-    int aux = a;
-    a = b;
-    b = aux;
-}
-
-void quickSort(int* array, int low, int high){
-    int pivot = array[low];
-
-    int i = low+1, j = high-1;
-
-
-    while(i < j){
-
-        while(array[i] < pivot){
-            i++;
-
-            if(i > j){
-                quickSort(array, low, j);
-                quickSort(array, i, high);
-            }
-        }
-
-        while(array[j] > pivot){
-            j--;
-
-            if(i > j){
-                quickSort(array, low, j);
-                quickSort(array, i, high);
-            }
-        }
-
-        scambio(array[i], array[j]);
-    }
 }
