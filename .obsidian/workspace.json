@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0e50548702182e9c",
+        "id": "5c93945a2adfbbca",
         "type": "tabs",
         "children": [
           {
-            "id": "d801a435dba7c671",
+            "id": "0f34310b6dcfcaa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lezioneTeo/appuntiLezione/lez30-11-2022.md",
+                "file": "lezioneTeo/appuntiLezione/lez16-11-2022.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1e5985451882bde5",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lezioneTeo/appuntiLezione/lez30-11-2022.md",
+                "file": "lezioneTeo/appuntiLezione/lez16-11-2022.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lezioneTeo/appuntiLezione/lez30-11-2022.md",
+                "file": "lezioneTeo/appuntiLezione/lez16-11-2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lezioneTeo/appuntiLezione/lez30-11-2022.md"
+                "file": "lezioneTeo/appuntiLezione/lez16-11-2022.md"
               }
             }
           }
@@ -136,16 +137,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d801a435dba7c671",
+  "active": "0f34310b6dcfcaa7",
   "lastOpenFiles": [
-    "lezioneTeo/appuntiLezione/lez28-11-2022.md",
+    "lezioneTeo/appuntiLezione/lez14-11-2022.md",
+    "lezioneTeo/appuntiLezione/lez09-11-2022.md",
     "lezioneTeo/appuntiLezione/lez30-11-2022.md",
+    "lezioneTeo/appuntiLezione/lez28-11-2022.md",
     "lezioneTeo/appuntiLezione/lez21-11-2022.md",
     "lezioneTeo/appuntiLezione/lez16-11-2022.md",
     "lezioneTeo/appuntiLezione/lez04.md",
     "lezioneTeo/appuntiLezione/lez12.md",
-    "lezioneTeo/appuntiLezione/lez09-11-2022.md",
-    "lezioneTeo/appuntiLezione/lez14-11-2022.md",
     "lez17-11-2022.md",
     "main.pdf"
   ]
