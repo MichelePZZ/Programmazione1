@@ -35,7 +35,6 @@ int main(int argc, char* argv[]){
     int n;
     while(a.get(c)){
         if(c == ' '){
-            
         } else { 
             n++;
         }

@@ -50,7 +50,7 @@ int max(int arr[]){
     return max;
 }
 
-int max(int arr[]){
+int min(int arr[]){
     int min = 9;
 
     for(int i = 0; i < SIZE; i++){
